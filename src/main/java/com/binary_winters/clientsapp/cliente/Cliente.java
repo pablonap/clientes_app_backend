@@ -1,4 +1,4 @@
-package com.binary_winters.clientsapp.cliente.model;
+package com.binary_winters.clientsapp.cliente;
 
 import java.io.Serializable;
 import java.util.Date;

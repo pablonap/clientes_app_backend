@@ -1,13 +1,10 @@
-package com.binary_winters.clientsapp.cliente.service;
+package com.binary_winters.clientsapp.cliente;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.binary_winters.clientsapp.cliente.model.Cliente;
-import com.binary_winters.clientsapp.cliente.repository.IClienteDao;
 
 @Service
 public class ClienteService {
