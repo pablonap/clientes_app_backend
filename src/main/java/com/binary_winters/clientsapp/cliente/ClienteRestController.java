@@ -1,5 +1,6 @@
 package com.binary_winters.clientsapp.cliente;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -31,7 +32,15 @@ public class ClienteRestController {
 	
 	@GetMapping("/clientes/{id}")
 	public Cliente show(@PathVariable Long id) {
-		return this.clienteService.findById(id);
+		Cliente cliente = this.clienteService.findById(id);
+		
+		List<Address> addressList = new ArrayList<>();
+		addressList.add(new Address("street1"));
+		addressList.add(new Address("street2"));
+		
+		cliente.setAddress(addressList);
+
+		return cliente;
 	}
 
 	@PostMapping("/clientes")
